@@ -1,1 +1,6 @@
 *.pyc
+data/
+build/
+demo/
+ckpt/
+outputs/

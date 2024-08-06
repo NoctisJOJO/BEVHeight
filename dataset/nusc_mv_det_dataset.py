@@ -598,7 +598,7 @@ class NuscMVDetDataset(Dataset):
             gt_labels.append(
                 self.classes.index(map_name_from_general_to_detection[
                     ann_info['category_name']]))
-        return torch.Tensor(gt_boxes), torch.tensor(gt_labels)
+        return torch.Tensor(np.array(gt_boxes)), torch.tensor(np.array(gt_labels))
 
     def choose_cams(self):
         """Choose cameras randomly.
